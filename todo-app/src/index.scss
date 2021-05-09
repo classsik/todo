@@ -5,6 +5,7 @@
   outline: none;
   font-family: "Roboto", -apple-system, system-ui, sans-serif;
   // TODO: outline
+  box-sizing: border-box;
 }
 
 body {
@@ -31,5 +32,36 @@ body {
     border-right: 1px solid #f1f1f1;
     padding: 60px 20px;
     box-sizing: border-box;
+  }
+}
+
+.button {
+  background: #4dd599;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: darken(#4dd599, 7%);
+  }
+
+  &:active {
+    background: darken(#4dd599, 10%);
+  }
+}
+
+.field {
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #c7c7c7;
+  width: 100%;
+
+  &:focus {
+    border-color: #dbdbdb;
   }
 }
