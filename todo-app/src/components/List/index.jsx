@@ -1,6 +1,7 @@
 import React from "react";
 import "./List.scss";
 import classNames from "classnames";
+import axios from "axios";
 
 import removeSvg from "../../assets/img/remove.svg";
 import Badge from "../Badge";
@@ -8,7 +9,9 @@ import Badge from "../Badge";
 export default function List({ items, isRemovable, onClick, onRemove }) {
   const removeList = (item) => {
     if (window.confirm("Вы действительно хотите удалить раздел?")) {
-      onRemove(item);
+      axios.delete("http://localhost:8000/lists/" + item.id).then(() => {
+        onRemove(item.id);
+      });
     }
   };
 
@@ -19,7 +22,7 @@ export default function List({ items, isRemovable, onClick, onRemove }) {
           key={index}
           className={classNames(item.className, { active: item.active })}
         >
-          <i>{item.icon ? item.icon : <Badge color={item.color} />}</i>
+          <i>{item.icon ? item.icon : <Badge color={item.color.name} />}</i>
           <span>{item.name}</span>
           {isRemovable && (
             <img

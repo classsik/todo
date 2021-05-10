@@ -28,9 +28,13 @@
     &-row {
       display: flex;
       align-items: center;
+      margin-bottom: 15px;
 
-      p {
-        margin-left: 10px;
+      input {
+        margin-left: 15px;
+        border: 0;
+        font-size: 16px;
+        width: 100%;
       }
     }
   }
