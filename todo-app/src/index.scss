@@ -24,10 +24,16 @@ body {
   border-radius: 10px;
   border: 1px solid #f1f1f1;
   font-size: 14px;
+  display: flex;
+
+  &__tasks {
+    flex: 1;
+    padding: 60px;
+  }
 
   &__sidebar {
     background-color: #f4f6f8;
-    width: 200px;
+    width: 250px;
     height: 100%;
     border-right: 1px solid #f1f1f1;
     padding: 60px 20px;
