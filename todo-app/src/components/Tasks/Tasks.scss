@@ -23,8 +23,49 @@
     }
   }
 
+  &__form {
+    margin-top: 20px;
+
+    &-block {
+      .button {
+        margin-right: 10px;
+        margin-top: 15px;
+      }
+    }
+    &-new {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      opacity: 0.4;
+      transition: opacity 0.15s ease-in-out;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      img {
+        height: 18px;
+        width: 18px;
+      }
+
+      span {
+        font-size: 16px;
+        margin-left: 18px;
+      }
+    }
+  }
+
   &__items {
     margin-top: 30px;
+
+    h2 {
+      font-family: "Montserrat";
+      font-size: 28px;
+      font-weight: bold;
+      color: #c9d1d3;
+      text-align: center;
+    }
+
     &-row {
       display: flex;
       align-items: center;

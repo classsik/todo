@@ -17,7 +17,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 750px;
+  width: 850px;
   height: 530px;
   transform: translate(-50%, -50%);
   box-shadow: 1px 2px 20px #f3f3f3;
@@ -48,6 +48,7 @@ body {
   color: #fff;
   padding: 10px;
   cursor: pointer;
+  font-size: 14px;
 
   &:hover {
     background: darken(#4dd599, 7%);
@@ -55,6 +56,17 @@ body {
 
   &:active {
     background: darken(#4dd599, 10%);
+  }
+
+  &--grey {
+    background: #f4f6f8;
+    color: #9c9c9c;
+    &:hover {
+      background: darken(#f4f6f8, 7%);
+    }
+    &:active {
+      background: darken(#f4f6f8, 10%);
+    }
   }
 }
 
@@ -64,7 +76,6 @@ body {
   border-radius: 4px;
   padding: 8px 12px;
   font-size: 14px;
-  color: #c7c7c7;
   width: 100%;
 
   &:focus {
