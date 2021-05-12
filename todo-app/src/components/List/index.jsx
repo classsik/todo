@@ -29,7 +29,9 @@ export default function List({
           onClick={onClickItem ? () => onClickItem(item) : null}
           key={index}
           className={classNames(item.className, {
-            active: activeItem && activeItem.id === item.id,
+            active: item.active
+              ? item.active
+              : activeItem && activeItem.id === item.id,
           })}
         >
           <i>{item.icon ? item.icon : <Badge color={item.color.name} />}</i>
