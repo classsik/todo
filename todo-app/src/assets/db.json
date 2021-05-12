@@ -31,23 +31,22 @@
       "id": 9
     },
     {
-      "name": "fsdf",
-      "colorId": 3,
-      "id": 10
+      "name": "fdsd",
+      "colorId": 8,
+      "id": 11
+    },
+    {
+      "name": "fsdfafe",
+      "colorId": 5,
+      "id": 12
     }
   ],
   "tasks": [
     {
-      "id": 1,
-      "listId": 2,
-      "text": "Изучить JavaScript",
-      "completed": true
-    },
-    {
       "id": 2,
       "listId": 2,
-      "text": "Изучить паттерны проектирования",
-      "completed": false
+      "text": "Изучить паттерн",
+      "completed": true
     },
     {
       "id": 3,
@@ -59,7 +58,7 @@
       "id": 4,
       "listId": 2,
       "text": "Redux (redux-observable, redux-saga)",
-      "completed": false
+      "completed": true
     },
     {
       "listId": 2,
@@ -82,14 +81,26 @@
     {
       "listId": 2,
       "text": "fsdf",
-      "completed": false,
+      "completed": true,
       "id": 13
     },
     {
       "listId": 2,
       "text": "fsdfs",
-      "completed": false,
+      "completed": true,
       "id": 14
+    },
+    {
+      "listId": 4,
+      "text": "gdfgdfg",
+      "completed": false,
+      "id": 15
+    },
+    {
+      "listId": 2,
+      "text": "fsdfs",
+      "completed": true,
+      "id": 16
     }
   ],
   "colors": [

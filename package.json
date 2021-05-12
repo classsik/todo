@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "classnames": "^2.3.1",
-    "json-server": "^0.16.3"
+    "json-server": "^0.16.3",
+    "react-router-dom": "^5.2.0"
   }
 }
